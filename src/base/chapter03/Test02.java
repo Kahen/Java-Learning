@@ -1,4 +1,4 @@
-package base.chapter06;
+package base.chapter03;
 
 import java.util.Arrays;
 
