@@ -10,7 +10,7 @@ import java.lang.ref.WeakReference;
  */
 public class WeakReferenceWhenIdle {
     public static void main(String[] args) {
-        House seller = new House();
+        House seller = new House("1号卖家房源");
         WeakReference<House> buyer3 = new WeakReference<>(seller);
         seller = null;
 

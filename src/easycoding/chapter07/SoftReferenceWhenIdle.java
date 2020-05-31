@@ -9,7 +9,7 @@ import java.lang.ref.SoftReference;
  */
 public class SoftReferenceWhenIdle {
     public static void main(String[] args) {
-        House seller = new House();
+        House seller = new House("1号卖家房源");
 
         SoftReference<House> buyer2 = new SoftReference<House>(seller);
         seller = null;

@@ -22,7 +22,7 @@ public class SoftReferenceHouse {
             // houses.add(new House());
 
             // 剧情反转注释处
-            SoftReference<House> buyer2 = new SoftReference<>(new House());
+            SoftReference<House> buyer2 = new SoftReference<>(new House("1号卖家房源"));
             // 剧情反转注释处
             houses.add(buyer2);
 
@@ -34,6 +34,11 @@ public class SoftReferenceHouse {
 class House {
     private static final Integer DOOR_NUMBER = 2000;
     public Door[] doors = new Door[DOOR_NUMBER];
+
+    public House(String s) {
+        this.doors = doors;
+    }
+
 
     class Door {
     }
